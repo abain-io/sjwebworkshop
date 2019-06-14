@@ -10,8 +10,7 @@
   "dependencies": {
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "peerDependencies": {},
   "private": true
 }
