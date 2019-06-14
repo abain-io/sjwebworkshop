@@ -1,3 +1,17 @@
-"scripts": {
-  "lh": "lighthousebot"
+{
+  "version": "0.1.0",
+  "author": {
+    "name": "scott jehl",
+    "email": "scottjehl@gmail.com"
+  },
+  "scripts": {
+    "lh": "lighthousebot"
+  },
+  "dependencies": {
+    "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git"
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {},
+  "private": true
 }
