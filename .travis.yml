@@ -1,6 +1,6 @@
 language: node_js
 install:
-  - npm install # make sure to install the deps when Travis runs.
+  - npm i --save-dev https://github.com/GoogleChromeLabs/lighthousebot
 after_success:
   # - ./deploy.sh # TODO(you): deploy the PR changes to your staging server.
-  - npm run lh -- --perf=96 --pwa=100 https://deploy-preview-2--sjwebworkshop.netlify.com/
+  - npm run lh --no-comment --perf=96 --pwa=100 https://deploy-preview-$TRAVIS_PULL_REQUEST--sjwebworkshop.netlify.com/
