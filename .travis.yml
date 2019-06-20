@@ -1,6 +1,7 @@
 language: node_js
+node_js:
+  - "10"
 install:
   - npm i --save-dev https://github.com/GoogleChromeLabs/lighthousebot
 after_success:
-  # - ./deploy.sh # TODO(you): deploy the PR changes to your staging server.
-  - npm run lh --no-comment --perf=96 --pwa=100 https://deploy-preview-$TRAVIS_PULL_REQUEST--sjwebworkshop.netlify.com/
+  - npm run lh --perf=96 --pwa=100 https://deploy-preview-$TRAVIS_PULL_REQUEST--sjwebworkshop.netlify.com/
