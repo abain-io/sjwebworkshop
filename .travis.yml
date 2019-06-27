@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - "10"
 install:
-  - npm i --save-dev https://github.com/GoogleChromeLabs/lighthousebot
+  - npm install
 after_success:
   - npm run lh https://deploy-preview-$TRAVIS_PULL_REQUEST--sjwebworkshop.netlify.com/cnn/
